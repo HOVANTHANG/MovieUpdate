@@ -1,0 +1,157 @@
+
+
+/* main */
+
+*{
+    color: #fff;
+}
+
+main {
+    margin-bottom: 6%;
+}
+main .container{
+    width: 80rem;
+    /*max-width: 80%;*/
+    margin: 0 auto;
+}
+main h1 {
+    text-align: center;
+    margin: 8% 10px 2%;
+    font-size: 1.8rem;
+    font-weight: 540;
+    text-transform: uppercase;
+}
+main .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+main .img{
+    width: 100%;
+    object-fit: cover;
+}
+
+main .content{
+    padding: 1rem;
+
+}
+
+main .content h3{
+    font-size: 0.9rem;
+    font-weight: 530;
+}
+
+main div + h3{
+    text-align: center;
+    padding: 2rem;
+}
+
+
+main .content .day{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 0.65rem;
+    color: #a5a5a5;
+}
+
+main .content a{
+    color: rgb(210, 210, 210);
+    text-decoration: none;
+}
+main img{
+    /*position: absolute;*/
+    width: 100%;
+    /*height: 60%;*/
+    height: 200px;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+}
+
+main .item-km{
+    border: 1px solid #ffffff44;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main .item-km .img{
+    overflow: hidden;
+}
+
+main .item-km:hover{
+    & img{
+        transform: scale(1.15);
+    }
+    
+    & a h3 {
+        color: #ffffff;
+        transform: scale(1.02);
+    }
+}
+
+main .item-km:active a h3{
+    color: #b07ccc;
+}
+
+@media (max-width: 575px){
+    main .container {
+    max-width: 80%;
+    margin: 0 auto;
+    }
+    main .grid{
+        display: grid;
+        grid-template-columns: auto;
+        gap:1rem;
+        }
+
+}
+@media (min-width: 576px){
+    main .container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    main .grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap:1rem;
+    }
+    
+}
+@media (min-width: 780px) {
+    main .container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    main .grid{
+        display: grid;
+        grid-template-columns: auto auto ;
+        gap:1rem;
+    
+    } 
+    
+} 
+@media (min-width: 1200px) {
+    main .container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    main .grid{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap:1rem;
+    }
+    
+} 
+
+
+
+
+@media (max-width: 768px) {
+
+    main h1 {
+        margin: 30% 10px 8%;
+    }
+
+}
